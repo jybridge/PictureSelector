@@ -20,6 +20,7 @@
     <attr name="picture.arrow_down.icon" format="reference" />
     <attr name="picture.arrow_up.icon" format="reference" />
     <attr name="picture.num.style" format="reference" />
+    <attr name="picture.num.textColor" format="reference|color" />
     <attr name="picture.checked.style" format="reference" />
     <attr name="picture.bottom.bg" format="reference|color" />
     <attr name="picture.preview.textColor" format="reference|color" />
@@ -32,6 +33,7 @@
     <attr name="picture.preview.leftBack.icon" format="reference" />
     <attr name="picture.statusFontColor" format="boolean" />
     <attr name="picture.style.numComplete" format="boolean" />
+    <attr name="picture.complete.bg" format="reference" />
     <attr name="picture.style.checkNumMode" format="boolean" />
     <attr name="picture.crop.toolbar.bg" format="reference|color" />
     <attr name="picture.crop.status.color" format="reference|color" />

@@ -271,11 +271,20 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
             if (config.style.pictureCheckNumBgStyle != 0) {
                 mTvPictureImgNum.setBackgroundResource(config.style.pictureCheckNumBgStyle);
             }
+            if (config.style.pictureNumTextColor != 0) {
+                mTvPictureImgNum.setTextColor(config.style.pictureNumTextColor);
+            }
+            if (config.style.pictureNumTextSize != 0) {
+                mTvPictureImgNum.setTextSize(config.style.pictureNumTextSize);
+            }
             if (config.style.pictureUnCompleteTextColor != 0) {
                 mTvPictureOk.setTextColor(config.style.pictureUnCompleteTextColor);
             }
             if (config.style.pictureCompleteTextSize != 0) {
                 mTvPictureOk.setTextSize(config.style.pictureCompleteTextSize);
+            }
+            if (config.style.pictureCompleteBgStyle != 0) {
+                mTvPictureOk.setBackgroundResource(config.style.pictureCompleteBgStyle);
             }
             if (config.style.pictureBottomBgColor != 0) {
                 mBottomLayout.setBackgroundColor(config.style.pictureBottomBgColor);

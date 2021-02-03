@@ -56,6 +56,7 @@
             android:paddingRight="12dp"
             android:text="@string/picture_please_select"
             android:textColor="?attr/picture.complete.textColor"
+            android:background="?attr/picture.num.style"
             android:textSize="14sp" />
 
         <TextView
@@ -65,11 +66,11 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
             android:layout_toLeftOf="@id/picture_tv_ok"
-            android:background="?attr/picture.num.style"
+            android:background="?attr/picture.complete.bg"
             android:gravity="center"
             android:text="0"
-            android:textColor="@color/picture_color_white"
-            android:textSize="12sp"
+            android:textColor="?attr/picture.num.textColor"
+            android:textSize="14sp"
             android:visibility="invisible" />
 
     </RelativeLayout>

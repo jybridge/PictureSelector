@@ -107,6 +107,12 @@ public class PictureParameterStyle implements Parcelable {
     public int pictureCompleteTextSize;
 
     /**
+     * 图片已选数量圆点背景色
+     */
+    @DrawableRes
+    public int pictureCompleteBgStyle;
+
+    /**
      * 相册列表不可预览文字颜色
      */
     @ColorInt
@@ -209,6 +215,17 @@ public class PictureParameterStyle implements Parcelable {
     public int pictureWeChatChooseStyle;
 
     /**
+     * 相册列表完成按钮字体大小
+     */
+    public int pictureNumTextSize;
+
+    /**
+     * 相册列表不可预览文字颜色
+     */
+    @ColorInt
+    public int pictureNumTextColor;
+
+    /**
      * WeChatStyle 预览界面返回键样式
      */
     @DrawableRes
@@ -289,6 +306,7 @@ public class PictureParameterStyle implements Parcelable {
         dest.writeInt(this.pictureCompleteTextColor);
         dest.writeInt(this.pictureUnCompleteTextColor);
         dest.writeInt(this.pictureCompleteTextSize);
+        dest.writeInt(this.pictureCompleteBgStyle);
         dest.writeInt(this.pictureUnPreviewTextColor);
         dest.writeInt(this.picturePreviewTextSize);
         dest.writeString(this.pictureUnCompleteText);
@@ -306,6 +324,8 @@ public class PictureParameterStyle implements Parcelable {
         dest.writeInt(this.pictureTitleDownResId);
         dest.writeInt(this.pictureLeftBackIcon);
         dest.writeInt(this.pictureCheckedStyle);
+        dest.writeInt(this.pictureNumTextColor);
+        dest.wirteInt(this.pictureNumTextSize);
         dest.writeInt(this.pictureWeChatChooseStyle);
         dest.writeInt(this.pictureWeChatLeftBackStyle);
         dest.writeInt(this.pictureWeChatTitleBackgroundStyle);
@@ -336,6 +356,7 @@ public class PictureParameterStyle implements Parcelable {
         this.pictureCompleteTextColor = in.readInt();
         this.pictureUnCompleteTextColor = in.readInt();
         this.pictureCompleteTextSize = in.readInt();
+        this.pictureCompleteBgStyle = in.readInt();
         this.pictureUnPreviewTextColor = in.readInt();
         this.picturePreviewTextSize = in.readInt();
         this.pictureUnCompleteText = in.readString();
@@ -359,6 +380,8 @@ public class PictureParameterStyle implements Parcelable {
         this.pictureWeChatPreviewSelectedTextSize = in.readInt();
         this.pictureWeChatPreviewSelectedText = in.readString();
         this.pictureCheckNumBgStyle = in.readInt();
+        this.pictureNumTextSize = in.readInt();
+        this.pictureNumTextColor = in.readInt();
         this.pictureFolderCheckedDotStyle = in.readInt();
         this.pictureExternalPreviewDeleteStyle = in.readInt();
         this.pictureOriginalControlStyle = in.readInt();
